@@ -1,5 +1,9 @@
 // A class to represent lawyers
 public class Lawyer extends Employee {
+    public Lawyer(int years) {
+      super(years); // Calls Parent constructor
+    }
+
     // overrides getVacationForm from Employee class
     public String getVacationForm() {
     return "pink";
