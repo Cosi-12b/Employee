@@ -3,8 +3,8 @@
 public class Employee {
     private int years;
     
-    public Employee(int initialYears) {
-      years = initialYears;
+    public Employee(int years) {
+      this.years = years;
     }
     public int getHours() {
         return 40;                           // Base hours 40
@@ -26,6 +26,5 @@ public class Employee {
     
     public int getYears() {
       return years;
-    }
-    
+    }   
 }

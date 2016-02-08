@@ -1,16 +1,24 @@
 // A class to represent legal secretaries
+
 public class LegalSecretary extends Secretary {
-    public LegalSecretary(int years) {
-      super(years); // Calls Parent constructor
-    }
+  String subExpertise;
+  
+  public LegalSecretary(String subExpertise, int years) {
+    super(); // Calls Parent constructor
+    this.subExpertise = subExpertise; 
+  }
 
-    public void fileLegalBriefs() {
-        System.out.println("I could file all day!");
-    }
+  public void fileLegalBriefs() {
+      System.out.println("I could file all day!");
+  }
 
-    public double getSalary() {
-//    return 5500; // Raise
-      return super.getSalary() + 5000.0;
-    }
+  public double getSalary() {
+    return super.getSalary() + 5000.0;
+  }
+  
+  public String toString() {
+    String generic = super.toString();
+    return(generic + ", Legal Sec expertise: " + subExpertise);
+  }
 }
 
