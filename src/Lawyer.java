@@ -1,20 +1,6 @@
 // A class to represent lawyers
 public class Lawyer extends Employee {
   
-  private class Client {
-    private String name;
-    private int caseLoad;
-    
-    Client(String name, int caseLoad) {
-      this.name = name;
-      this.caseLoad = caseLoad;
-    }
-    
-    public String toString() {
-      return(String.format("Client: %s case: %d", name, caseLoad));
-     }
-  }
-  
   private Client currentClient;
 
     public Lawyer(int years) {
