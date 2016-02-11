@@ -7,11 +7,6 @@ public class Lawyer extends Employee {
       super(years); // Calls Parent constructor
     }
     
-    public void addClient(String name, int caseLoad) {
-      Client newClient = new Client(name, caseLoad);
-      currentClient = newClient;
-    }
-
     // overrides getVacationForm from Employee class
     public String getVacationForm() {
       return "pink";
@@ -19,20 +14,27 @@ public class Lawyer extends Employee {
     
     // overrides getVacationDays from Employee class
     public int getVacationDays() {
-      return 15; // 3 weeks vacation
+      return 15;               // 3 weeks vacation
     }
 
     public void sue() {
         System.out.println("I'll see you in court!");
     }
     
-    public double getSalary() {
-      //Why would this not work?
-      //return super.getSalary() + 5000 * years;
-
-      return super.getSalary() + 5000 * getYears();
-      
+    public int getSeniorityBonus() {
+      return(getSeniorityBonus()+1);
     }
+    
+    public double getSalary() {
+      return super.getSalary() + 5000 * getYears();
+    }
+    
+    public void addClient(String name, int caseLoad) {
+      Client newClient = new Client(name, caseLoad);
+      currentClient = newClient;
+    }
+
+
     
     public String toString() {
       String generic = super.toString();
