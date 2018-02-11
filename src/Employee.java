@@ -7,16 +7,24 @@ public class Employee {
       this.years = years;
     }
     public int getHours() {
-        return 40;                           // Base hours 40
+        return 40;                          // Base hours 40
     }
     public double getSalary() {
         return 50000.0;                     // Base Salary is 50K
     }
     public int getVacationDays() {
-        return 10 + 2 * years;              // Base vacation on years
+        return 10 + getSeniorityBonus();    // Base vacation on years
     }
     public String getVacationForm() {
         return "yellow";                    // use the yellow form
+    }
+
+    public int getYears() {
+      return years;
+    }   
+    
+    public int getSeniorityBonus() {
+      return getYears() * 2;
     }
     
     public String toString() {              // Pretty print of information
@@ -24,7 +32,4 @@ public class Employee {
               years, getHours(), getSalary(), getVacationDays());
     }
     
-    public int getYears() {
-      return years;
-    }   
 }

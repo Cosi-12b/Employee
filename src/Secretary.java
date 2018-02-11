@@ -5,8 +5,13 @@ public class Secretary extends Employee {
     super(0);                               // Assume Secretary has zero years
   }
   
-  public Secretary(int days) {              // Method overload for Constructor
-    super(days);
+  public Secretary(int years) {              // Method overload for Constructor
+    super(years);
+  }
+  
+  @Override 
+  public int getSeniorityBonus(){
+    return 0;
   }
   
   public void takeDictation(String text) {
