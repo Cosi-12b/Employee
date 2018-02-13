@@ -1,3 +1,5 @@
+package edu.brandeis.cosi12b.examples;
+
 // A class to represent marketers
 public class Marketer extends Employee {
     public Marketer(int years) {

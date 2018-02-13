@@ -1,3 +1,5 @@
+package edu.brandeis.cosi12b.examples;
+
 // A class to represent secretaries
 public class Secretary extends Employee {
 

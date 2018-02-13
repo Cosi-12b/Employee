@@ -1,3 +1,5 @@
+package edu.brandeis.cosi12b.examples;
+
 class Client {
   private String name;
   private int caseLoad;

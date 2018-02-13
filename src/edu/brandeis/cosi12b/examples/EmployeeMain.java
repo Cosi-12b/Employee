@@ -1,3 +1,5 @@
+package edu.brandeis.cosi12b.examples;
+
 public class EmployeeMain {
 
   public static void main(String[] args) {
@@ -8,10 +10,7 @@ public class EmployeeMain {
   
   private static void exampleOne() {
     System.out.println("*** Employee:");
-
-    Employee employee1 = new Employee(3);
-
-    
+    Employee employee1 = new Employee(3);    
     System.out.println(employee1);
         
     System.out.println("\n*** Secretary:");
