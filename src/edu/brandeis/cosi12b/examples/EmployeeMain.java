@@ -3,20 +3,21 @@ package edu.brandeis.cosi12b.examples;
 public class EmployeeMain {
 
   public static void main(String[] args) {
-    exampleOne();
+   exampleOne();
 //    exampleTwo();
 //    exampleThree();
+ //   exampleFour();
   }
   
   private static void exampleOne() {
     System.out.println("*** Employee:");
-    Employee employee1 = new Employee(3);    
+    Employee employee1 = new Employee();    
     System.out.println(employee1);
         
     System.out.println("\n*** Secretary:");
-    Secretary employee2 = new Secretary(1);
-    System.out.println(employee2);
-    employee2.takeDictation("CS12b example");
+    Employee sec = new Secretary();
+    System.out.println(sec);
+    sec.takeDictation("CS12b example");
   }
   
   private static void exampleTwo() {
@@ -38,6 +39,13 @@ public class EmployeeMain {
     Lawyer myLawyer = new Lawyer(5);
     myLawyer.addClient("Brandeis", 4);
     System.out.println(myLawyer);
+  }
+  
+  private static void exampleFour() {
+    Lawyer lawyer = new Lawyer(15);
+    Employee2 emp = new Employee2(30);
+    System.out.println(lawyer);
+    System.out.println(emp);
   }
   
 }  

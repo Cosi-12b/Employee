@@ -3,35 +3,24 @@ package edu.brandeis.cosi12b.examples;
 // A class to represent employees in general
 
 public class Employee {
-    private int years;
     
-    public Employee(int years) {
-      this.years = years;
-    }
     public int getHours() {
         return 40;                          // Base hours 40
     }
     public double getSalary() {
-        return 50000.0;                     // Base Salary is 50K
+        return 40000.0;                     // Base Salary is 40K
     }
     public int getVacationDays() {
-        return 10 + getSeniorityBonus();    // Base vacation on years
+        return 10;                          // Base vacation on years
     }
+
     public String getVacationForm() {
         return "yellow";                    // use the yellow form
     }
-
-    public int getYears() {
-      return years;
-    }   
-    
-    public int getSeniorityBonus() {
-      return getYears() * 2;
-    }
     
     public String toString() {              // Pretty print of information
-      return String.format("%d years; %d hours; salary $%8.2f , vacation days: %d", 
-              years, getHours(), getSalary(), getVacationDays());
+      return String.format("Employee: %d hours; salary $%8.2f, vacation days: %d", 
+              getHours(), getSalary(), getVacationDays());
     }
     
 }

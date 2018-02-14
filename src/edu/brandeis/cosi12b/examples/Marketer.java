@@ -1,7 +1,7 @@
 package edu.brandeis.cosi12b.examples;
 
 // A class to represent marketers
-public class Marketer extends Employee {
+public class Marketer extends Employee2 {
     public Marketer(int years) {
       super(years);                         // Pass the years to parent constructor
     }
